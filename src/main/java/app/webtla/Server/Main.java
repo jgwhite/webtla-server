@@ -1,4 +1,4 @@
-package uk.co.jgwhite.WebTLA.Server;
+package app.webtla.Server;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
