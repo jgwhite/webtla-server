@@ -54,6 +54,13 @@
       <artifactId>spring-boot-devtools</artifactId>
       <scope>runtime</scope>
     </dependency>
+    <dependency>
+      <groupId>org.lamport</groupId>
+      <artifactId>tlatools2</artifactId>
+      <version>1.7.0</version>
+      <scope>system</scope>
+      <systemPath>${basedir}/vendor/tla2tools.jar</systemPath>
+    </dependency>
   </dependencies>
 
   <build>
