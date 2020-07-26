@@ -4,7 +4,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>uk.co.jgwhite</groupId>
-  <artifactId>WebTLA</artifactId>
+  <artifactId>WebTLA-Server</artifactId>
   <version>1.0.0</version>
 
   <parent>
@@ -13,7 +13,7 @@
     <version>2.3.0.RELEASE</version>
     <relativePath/>
   </parent>
-  <name>WebTLA</name>
+  <name>WebTLA-Server</name>
 
   <properties>
     <java.version>1.8</java.version>
