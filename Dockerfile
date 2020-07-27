@@ -1,7 +1,5 @@
 FROM ubuntu:20.04
 
-WORKDIR /work
-
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update
@@ -11,8 +9,13 @@ RUN apt-get install -y \
       maven \
       texlive-latex-base
 
-COPY . /work
+WORKDIR /app
+
+COPY . /app
 
 RUN mvn install
 
-ENTRYPOINT ["java", "-jar", "target/Server-0.0.0.jar"]
+RUN useradd -m app
+USER app
+
+CMD java -jar target/Server-0.0.0.jar
