@@ -1,4 +1,4 @@
-version: '2'
+version: "2"
 
 services:
   web:
@@ -6,9 +6,10 @@ services:
     ports:
       - "5000:5000"
     volumes:
-      - ".:/work"
+      - ".:/app"
     depends_on:
       - "db"
+    command: "mvn spring-boot:run"
   db:
     image: "postgres:latest"
     ports:
